@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <head>
+ 	<meta name= "viewport" content= "width=device-width,initial-scale=1">
+	 <title>Untitled</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="/public/style.css" type="text/css">
+ </head>
+	 <body>
+		<%=id%>
+
+
+	 
+	 	<form  id="form" action="/updateregisterbyId" method="POST" name="register">
+	 		<div class= "header">
+	 			Updating the  form
+	 		</div>
+	 	
+			 <input type="password" id="name" placeholder="registerId" name="id" value="<%=id%>">
+			 
+			 <input type="text" id="name" placeholder="Name" name="registerName">
+	 	
+	 		<input type="email"  id="email" placeholder="Email" name="registerEmail">
+	 		
+	 		<input type="text"  id="course" placeholder="course" name="registerCourse">
+	 		
+			 <input type="password"  id="pwd" placeholder="Password" name="registerPassword">
+			 
+
+            
+			 <button type="submit"  id="submit">Submit</button><br>
+
+			 
+
+			 	</form>
+	
+		<!-- <script src=register.js></script> -->
+	
+	 </body>
+ </html>

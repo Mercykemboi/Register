@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+ <head>
+ 	<meta name= "viewport" content= "width=device-width,initial-scale=1">
+	 <title>Untitled</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="/public/style.css" type="text/css">
+ </head>
+	 <body>
+	 
+	 	<form  id="form" action="/addRegister" method="POST" name="register">
+	 		<div class= "header">
+	 			Create an online registration
+	 		</div>
+	 	
+	 		<input type="text" id="name" placeholder="Name" name="registerName">
+	 		
+	 		<input type="email"  id="email" placeholder="Email" name="registerEmail">
+	 		
+	 		<input type="text"  id="course" placeholder="course" name="registerCourse">
+	 		
+             <input type="password"  id="pwd" placeholder="Password" name="registerPassword">
+            
+			 <button type="submit"  id="submit">Submit</button><br>
+
+			 <a href="/getRegisters"><button type="button">Show All Registers</button></a>
+	 	</form>
+	
+		<!-- <script src=register.js></script> -->
+	
+	 </body>
+ </html>

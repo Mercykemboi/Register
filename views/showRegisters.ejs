@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Register account</title>
+    </head>
+    <style>
+        body{
+            background-color:turquoise;
+            font-size: 18px;
+    
+        }
+        section{
+            text-align: center;
+            margin: 100px 100px 100px 100px;
+            font-size: 20px;
+        }
+        
+    </style>
+    <body>
+    <section>
+        <%registers.forEach(function(register) {%>
+            <b><%=register.registerName%></b> 
+            <b><%=register.registerCourse%> </b></br>
+            <a href="/getregisterbyId/<%=register.id%>"><button>View</button></a><br>
+            <a href="/edit/<%=register.id%>"><button>update</button></a><br>
+           <a href="/deleteregister/<%=register._id%>"> <button>delete</button></a><br>
+          
+           
+           
+         
+           
+         <%})%>
+        </section>
+    </body>
+</html> 
